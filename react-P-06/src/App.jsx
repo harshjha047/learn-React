@@ -19,7 +19,7 @@ const options = Object.keys(currencyInfo)
 
   const convert = () => {
       if (currencyInfo && currencyInfo[to]) {
-          setConvertedAmount(amount * currencyInfo[to]);
+          setConvertedAmount(amount * currencyInfo[to]);   
       }
   };
   return (
