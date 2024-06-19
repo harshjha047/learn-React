@@ -8,7 +8,7 @@ function Footer() {
         <div className="w-3/4 h-72 b1 flex justify-evenly items-center flex-col p-1">
             <div className="w-full h-3/4  flex justify-evenly items-center"> 
                 <div className=" w-2/4 h-full  flex justify-evenly items-center flex-col">
-                    <div className=" w-full h-3/4  flex justify-evenly items-center"><h1 className=' font-black text-7xl'>HELLO</h1></div>
+                    <div className=" w-full h-3/4  flex justify-evenly items-center"><h1 className=' font-black text-7xl'>LOGO</h1></div>
                     <div className=" w-full h-1/5  flex"></div>
                 </div>
                 <div className=" w-2/4 h-full  flex justify-evenly items-center">
@@ -20,11 +20,11 @@ function Footer() {
             <div className="w-full h-1/5  flex justify-evenly items-center">
                 <div className=" w-2/4 h-full  flex  items-center text-sm"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></div>
                 <div className=" w-2/4 h-full  flex relative items-center"><div className=" w-2/3 absolute right-0 flex justify-evenly items-center">
-                <div className="cir "></div>
-                <div className="cir "></div>
-                <div className="cir "></div>
-                <div className="cir "></div>
-                <div className="cir "></div>
+                <div className="cir ">H</div>
+                <div className="cir ">A</div>
+                <div className="cir ">R</div>
+                <div className="cir ">S</div>
+                <div className="cir ">H</div>
                 </div>
                 </div>
             </div>
