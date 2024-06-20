@@ -1,13 +1,20 @@
-import { useState } from 'react'
+// import React from 'react'
 import './App.css'
+import UserContextProvider from './Context/UserContextProvider'
+import Login from './Components/Login'
+import Profile from './Components/Profile'
 
 function App() {
 
 
   return (
-    <>
-    <h1>hello Harsh</h1>
-    </>
+    
+    <UserContextProvider>
+      <h1>hello</h1>
+      <Login/>
+      <Profile/>
+    </UserContextProvider>
+  
   )
 }
 
