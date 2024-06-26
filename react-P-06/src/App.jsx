@@ -1,3 +1,5 @@
+//fir sa karna hai; not completed;
+
 import { useState } from 'react'
 import {InputBox} from "./components"
 import {useMoney} from "./hooks/useMoney"
