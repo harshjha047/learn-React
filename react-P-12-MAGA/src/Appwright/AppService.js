@@ -10,7 +10,7 @@ export class AppService {
           .setEndpoint(config.appWriteUrl)
           .setProject(config.projectId);               
 
-        const account = new Account(this.Client);
+        this.account = new Account(this.Client);
     }
     async createAccount({email,password,name}){
        try{
