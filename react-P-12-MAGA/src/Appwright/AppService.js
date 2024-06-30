@@ -41,7 +41,7 @@ export class AppService {
     async getCurrentStatus(){
         try {
             console.log("Get Current Status Done");
-            return this.account.get();
+            return await this.account.get();
             
         } catch (error) {
             console.log("Get Current Status",error);
