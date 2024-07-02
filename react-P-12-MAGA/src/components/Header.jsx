@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 
 
 function header() {
-  const authStatus = useSelector((state)=>state.auth.status)//error
+  const authStatus = useSelector((state)=>state.auth?.status)//error
   const navigate = useNavigate()
   const navItems=[
     {
