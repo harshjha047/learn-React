@@ -8,6 +8,7 @@ import Card from "./Card";
 import Login from './Login';
 import Input from "./Input";
 import Signup from "./Signup";
+import RTE from "./RTE";
 
 
-export {Header, Footer, Home, Container, Logout, Select, Card,Login,Input,Signup} 
+export {Header, Footer, Home, Container, Logout, Select, Card,Login,Input,Signup,RTE} 
