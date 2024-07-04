@@ -13,8 +13,6 @@ export default function PostForm({post}) {
             content: post?.content || "",
             status: post?.status || "",
         }
-        
-        
     })
     const navigate = useNavigate()
     const userData = useSelector(state.user.userData)

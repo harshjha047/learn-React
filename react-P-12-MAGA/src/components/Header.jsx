@@ -16,7 +16,7 @@ function header() {
     },
     {
       name:"All Posts",
-      slug:"/all-posts",
+      slug:"/allpost",
       active:authStatus
     },
     {
@@ -26,12 +26,12 @@ function header() {
     },
     {
       name:"Sign Up",
-      slug:"/register",
+      slug:"/signup",
       active:!authStatus
     },
     {
       name:"Add post",
-      slug:"/add-post",
+      slug:"/addpost",
       active:authStatus
     },
 
