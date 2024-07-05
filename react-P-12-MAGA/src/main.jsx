@@ -5,8 +5,8 @@ import {RouterProvider, createBrowserRouter} from "react-router-dom"
 import './index.css'
 import { Provider } from 'react-redux'
 import store from './Store/Store'
-import {AddPost, AllPost, EditPost, Home, Login, Post, SignUp} from './pages'
-import {Protected}from './components'
+import {AddPost, AllPost, EditPost, Home, Post, SignUp} from './pages'
+import {Protected,Login}from './components'
 
 const router = createBrowserRouter([
   {
@@ -19,19 +19,11 @@ const router = createBrowserRouter([
    },
    {
     path:"/login",
-    element:(
-    <Protected authentication={false}>
-      <Login/>
-      </Protected>
-      )
+    element:<Login/>  
    },
    {
     path:"/signup",
-    element:(
-      <Protected authentication={false}>
-        <SignUp/>
-      </Protected>
-    )
+    element:<SignUp/>
    },
    {
     path:"/addpost",

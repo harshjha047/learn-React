@@ -14,14 +14,18 @@ function Home() {
     
     if (posts.length===0) {
         return (
-            <div><Container>
-                <h1>nop</h1>
+            <div>
+                <Container>
+                <div className="h-[100vh]">
+                <h1>Home</h1>
+                </div>
                 </Container>
                 </div>
           )
     } else{
         return (
-            <div><Container>
+            <div>
+                <Container>
                 <h1>posts</h1>
                 {posts.map((post)=>{
                     <div className="" key={post.id}>

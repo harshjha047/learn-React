@@ -22,11 +22,10 @@ function App() {
     .finally(()=> setLoading(false))
   }, [])
 
-  return !loading ? (<div className=' min-h-screen w-full bg-slate-400'>
+  return !loading ? (<div className=' min-h-screen w-full bg-zinc-600'>
     <Header></Header>
     <main>
-    <Home></Home> 
-    {/* <Outlet/> */}
+    <Outlet/>
     </main>
     <Footer></Footer>
     </div>)

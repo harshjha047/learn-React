@@ -1,3 +1,4 @@
+//AppConfig = Config
 import config from "../config/config";
 import {Client,ID,Databases,Query,Storage} from 'appwrite'
 
@@ -11,6 +12,12 @@ export class AppConfig {
           .setProject(config.projectId);               
           this.storage = new Storage(this.Client);
           this.databases = new Databases(this.Client);
+
+          console.log("AppWrite URL:", config.appWriteUrl);
+          console.log("Project ID:", config.projectId);
+          console.log("Database ID:", config.databaseId);
+          console.log("Collection ID:", config.collectionId);
+          console.log("Bucket ID:", config.bucketId);
     }
     async createPost({title,slug,content,featuredImage,status,userId}){
         try {
@@ -63,7 +70,7 @@ export class AppConfig {
     }
     async getPost(slug){
         try {
-            return await this.databases.getDocument(
+            return await this.databases.getDocument(//error
                 config.databaseId, // databaseId
                 config.collectionId, // collectionId
                 slug, // documentId

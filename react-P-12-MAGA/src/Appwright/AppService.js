@@ -1,10 +1,10 @@
-// re-usable code
+// re-usable code AppService = Auth
 import config from "../config/config";
 import {Client,Account,ID} from 'appwrite'
 
 export class AppService {
     Client = new Client();
-    account;
+    account
     constructor(){
         this.Client
           .setEndpoint(config.appWriteUrl)
@@ -26,7 +26,7 @@ export class AppService {
         }
        }
        catch(error){
-        console.log("In createAccount",error);
+        console.log("In createAccount",error); 
        }
     };
     async login({email,password}){
@@ -41,7 +41,7 @@ export class AppService {
     async getCurrentStatus(){
         try {
             console.log("Get Current Status Done");
-            return await this.account.get();
+            return await this.account.get();//error
             
         } catch (error) {
             console.log("Get Current Status",error);
