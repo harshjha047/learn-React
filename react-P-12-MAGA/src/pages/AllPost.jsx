@@ -5,12 +5,14 @@ import{Container,Card}from'../components/index'
 
 function AllPost() {
    const[posts,setPosts]= useState([])
-   useEffect(()=>{},[])
-   appConfig.getPost([posts]).then((posts)=>{
-    if(posts){
-        setPosts(posts.documents)
-    }
-   })
+   useEffect(()=>{
+    appConfig.getPost([posts]).then((posts)=>{
+        if(posts){
+            setPosts(posts.documents)
+        }
+       })
+   },[])
+  
   return (
     <div>
         <Container>

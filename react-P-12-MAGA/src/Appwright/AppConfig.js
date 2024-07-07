@@ -2,7 +2,7 @@
 import config from "../config/config";
 import {Client,ID,Databases,Query,Storage} from 'appwrite'
 
-export class AppConfig {
+export class AppConfig { 
     Client = new Client();
     databases;
     storage;
@@ -98,7 +98,7 @@ export class AppConfig {
         try {
             return await this.storage.createFile(
                 config.bucketId, // storageId
-                ID.unique,
+                ID.unique(),
                 file, // file
                 ["read('any')"] // permissions (optional)
             );
